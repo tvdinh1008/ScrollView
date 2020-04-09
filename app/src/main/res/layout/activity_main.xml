@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--Horizontal sắp xếp theo hàng(1 hàng) từ trái qua phải:mỗi lần thêm phần tử
+     thì nó sẽ mở rộng ra bên phải-->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--Ta sẽ thêm từng phần tử ảnh (nhỏ) vào trong Linear này-->
+        <LinearLayout
+            android:id="@+id/layout_list"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!--Ảnh chi tiết của ảnh khi ta click vào ảnh (nhỏ)-->
+    <ImageView
+        android:id="@+id/image_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
