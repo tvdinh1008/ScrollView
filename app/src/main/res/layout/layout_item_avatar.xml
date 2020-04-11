@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+
+    <!--tạo mới avatar hình tròn
+    vào drawable tạo round avatar , root là shape(hình tròn)
+     thay cho ImageView
+    -->
+    <ImageView
+        android:id="@+id/image_avatar"
+        android:layout_width="60dp"
+        android:visibility="gone"
+        android:layout_height="60dp"
+        android:src="@drawable/thumb2"/>
+    <TextView
+        android:id="@+id/text_round"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_avatar"
+        android:text="T"
+        android:gravity="center"
+        android:textSize="32sp"/>
+    <TextView
+        android:id="@+id/text_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_round"
+        android:text="full name"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@id/text_round"
+        android:layout_alignBottom="@id/text_round"
+        android:gravity="center"
+        android:textSize="28sp"/>
+
+    <ImageView
+        android:id="@+id/image_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star_normal"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
